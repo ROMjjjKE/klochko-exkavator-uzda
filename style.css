@@ -85,7 +85,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 /* техника */
 .mach{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(24px,4vw,60px);align-items:center}
 .mach figure{margin:0}
-.mach img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.mach img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:52% 50%;border-radius:var(--r)}
 .mach figcaption{font-size:.82rem;color:var(--ink3);margin-top:10px}
 .mach h2{margin-bottom:14px}
 .mach p{color:var(--ink2)}
