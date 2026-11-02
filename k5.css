@@ -1,0 +1,34 @@
+/* техника */
+.mach{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(24px,4vw,60px);align-items:center}
+.mach figure{margin:0}
+.mach img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.mach figcaption{font-size:.82rem;color:var(--ink3);margin-top:10px}
+.mach h2{margin-bottom:14px}
+.mach p{color:var(--ink2)}
+.att{list-style:none;margin-top:22px;border-top:1px solid var(--line)}
+.att li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line2)}
+.att b{font-weight:600}
+.att .k{font-family:var(--f);font-size:.8rem;color:var(--navy);letter-spacing:.1em}
+.att span.u{font-size:.86rem;color:var(--ink3);font-variant-numeric:tabular-nums}
+@media (max-width:900px){.mach{grid-template-columns:1fr}}
+/* задачи */
+.tasks{columns:2;column-gap:clamp(24px,4vw,56px);margin-top:6px}
+.tasks div{break-inside:avoid;padding:0 0 20px}
+.tasks h3{font-size:1.02rem;margin-bottom:5px}
+.tasks p{color:var(--ink2);font-size:.95rem}
+@media (max-width:780px){.tasks{columns:1}}
+/* шаги */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.steps li{background:var(--bg);padding:clamp(18px,2.4vw,26px);position:relative}
+.steps .i{font-family:var(--f);font-size:2rem;font-weight:500;color:var(--sand);line-height:1;font-variant-numeric:tabular-nums}
+.steps h3{font-size:1rem;margin:10px 0 6px}
+.steps p{color:var(--ink2);font-size:.92rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+/* оплата */
+.pay{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(22px,3.6vw,52px);align-items:start}
+.pay .box{border:1px solid var(--line);background:var(--bg);padding:clamp(20px,2.6vw,30px);border-radius:var(--r)}
+.pay dt{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);margin-top:16px}
+.pay dt:first-child{margin-top:0}
+.pay dd{font-weight:600;font-size:1.02rem;margin-top:3px}
+@media (max-width:860px){.pay{grid-template-columns:1fr}}
